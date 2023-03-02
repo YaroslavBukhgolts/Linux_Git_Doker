@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.conteiner {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    background: #F8FCFF;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 98px 0px 142px;
+}
+
+.header__menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__menuItem:not(:last-child) {
+    margin-right: 45px;
+}
+
+.header__menuLink {
+    transition-duration: 0.7s;
+}
+
+.header__menuLink:hover {
+    opacity: 0.7;
+    transition-duration: 0.7s;
+}
+.header__logoBlock {
+    flex-grow: 1;
+    margin-left: 300px;
+}
+
+.header__buttonBlock {
+    width: 50px;
+    height: 50px;
+    border: 1.4px solid #DFDFDF;
+    border-radius: 50%;
+}
+
+.header__button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: #F8FCFF;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+.header__button:hover {
+    background-color: #bbd5e8;
+    transition-duration: 0.3s;
+}
+.header__button:active {
+    background-color: #F8FCFF;
+    transition-duration: 0s;
+}
+
+/* FIRST SCREEN */
+.firstScreen {
+    padding: 0px 96px 94px 140px;
+}
+
+.firstScreen__row1 {
+    margin-bottom: 50px;
+}
+
+.firstScreen__mainBaner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstScreen__header {
+    margin-bottom: 48px;
+}
+
+.firstScreen__text {
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+.firstScreen__buttonBlock {
+    width: 200px;
+    height: 50px;
+}
+
+.firstScreen__button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: 18px;
+    background: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    color: #222223;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.firstScreen__buttonArrow {
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    background-color: #000;
+    background-image:url(../img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 18px;
+    transition-duration: 0.2s;
+}
+.firstScreen__button:hover {
+    background-color: #bbd5e8;
+    transition-duration: 0.3s;
+}
+.firstScreen__button:hover>.firstScreen__buttonArrow {
+    opacity: 0.7;
+    transition-duration: 0.3s;
+}
+.firstScreen__button:active,
+.firstScreen__button:active > .firstScreen__buttonArrow {
+    transform: scale(0.97);
+    transition-duration: 0.3s;
+}
+
+.firstScreen__advantages {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.firstScreen__advantagesItem:first-child {
+    flex-basis: 20%;
+}
+
+.firstScreen__advantagesItem {
+    flex-basis: 16%;
+}
+
+.firstScreen__advantagesHeader {
+    margin-bottom: 18px;
+}
+
+.hotIcon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/advantagesIcon/fire.svg);
+    background-position: center;
+}
+
+.firstScreen__advantagesIcon {
+    margin-bottom: 30px;
+}
+
+/* Modal */
+.modal__conteiner {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #60ace580;
+    justify-content: center;
+    align-items: center;
+}
+.modal__form {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+form > input {
+    border-bottom: 2px solid #000;
+    outline: none;
+    height: 50px;
+}
+
+input[type="number"] {
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    width: 25%;
+    margin: 0 auto;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+button[type="submit"]:active {
+    opacity: 1;
+    transform: scale(0.97);
+}
+
+.modal-active {
+    display: flex;
+} 
